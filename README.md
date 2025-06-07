@@ -1,39 +1,44 @@
-# Health Data Analysis: IMC & TMB
+# Health Data Analysis: BMI & BMR
 
-This repository contains a Jupyter notebook that performs a full analysis on health survey data collected in May 2025.
+This repository contains a full exploratory and statistical analysis of a health survey dataset collected in May 2025. The focus is on body mass index (BMI / IMC) and basal metabolic rate (BMR / TMB), along with their relationships with other variables.
 
-## 📊 Contents
+## 📦 Included Files
 
-The analysis includes:
+| File                             | Description                                                   |
+|----------------------------------|---------------------------------------------------------------|
+| `analisis_encuesta_colab.ipynb` | Jupyter notebook to run the analysis in Google Colab.         |
+| `analisis_encuesta_colab.py`    | Python script version of the notebook.                        |
+| `encuesta HD mayo 2025.xlsx`    | Excel file with the raw health survey dataset.                |
 
-- ✅ Calculation of **BMI (IMC)** and **BMR (TMB)** using international formulas.
-- ✅ Classification of BMI into standard categories: Underweight, Normal, Overweight, Obesity.
-- ✅ Descriptive statistics with up to 2 decimals.
-- ✅ Histograms for all numerical variables.
-- ✅ Pie chart (via histogram) of BMI category distribution.
-- ✅ Scatter plot of TMB vs. IMC, segmented by gender.
-- ✅ Heatmap of correlations among numerical variables.
-- ✅ Qualitative and quantitative analysis summaries.
+## 🔍 What This Project Does
 
-## 🛠️ How to Use
+- Calculates **BMI (IMC)** and **BMR (TMB)** using the Mifflin-St Jeor formula.
+- Categorizes BMI using WHO standard ranges: Underweight, Normal, Overweight, Obesity.
+- Provides descriptive statistics (rounded to 2 decimals).
+- Generates:
+  - Histograms for all numeric variables.
+  - A bar chart of BMI categories (%).
+  - A scatter plot of BMR vs. BMI, colored by gender.
+  - A heatmap of numerical variable correlations.
+- Presents a brief qualitative and quantitative data analysis summary.
 
-1. Open [Google Colab](https://colab.research.google.com/).
-2. Upload both of these files:
-   - `analisis_encuesta_colab.ipynb`
-   - `encuesta HD mayo 2025.xlsx` (raw dataset)
-3. Run all cells in the notebook.
-4. Visualizations and analysis will be displayed step by step.
+## 🚀 How to Run in Google Colab
 
-## 📁 Files
+1. Go to [Google Colab](https://colab.research.google.com/).
+2. Upload the three files listed above.
+3. Open `analisis_encuesta_colab.ipynb`.
+4. Run all cells in order.
 
-- `analisis_encuesta_colab.ipynb`: Main notebook with all code and visualizations.
-- `encuesta HD mayo 2025.xlsx`: Excel file with raw data (you must upload it yourself — not included due to privacy).
+> Alternatively, you can run `analisis_encuesta_colab.py` in any Python environment with `pandas`, `matplotlib`, and `seaborn`.
 
-## 📚 Requirements
+## ✅ Requirements
 
-The notebook is ready for Google Colab and uses:
+The following Python libraries are used (preinstalled in Colab):
 
-```bash
-pandas
-matplotlib
-seaborn
+- `pandas`
+- `matplotlib`
+- `seaborn`
+
+## 👩‍💻 Author
+
+Created by **Juliana Castillo Araujo** for academic and analytical learning purposes.
